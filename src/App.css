@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html {
+  background-color: #99bbff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editorWrap {
+  max-width: 600px;
+  margin: 1.125rem auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foolbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #6699ff;
+  padding: 0.3rem;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #4d88ff;
+  font-size: 1rem;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+i {
+  width: 25px;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#editor-previewer {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.previewWrap {
+  max-width: 800px;
+  margin: 1.25rem auto;
+  min-height: 200px;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+.fa-arrows-alt, .fa-compress {
+  margin-left: auto;
+}
+
+.fa-arrows-alt:hover, .fa-compress:hover {
+  color: #acc7fc;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  font-size: 0.875rem;
+  background-color: #ccddff;
+  box-shadow: 1px 1px 10px 2px #4d88ff;
+  resize: none;
+}
+
+#preview {
+  background-color: #ccddff;
+  box-shadow: 1px 1px 10px 2px #4d88ff;
+  padding: 0 1rem;
+}
+
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.none {
+  display: none;
+}
+
+.height {
+  height: 90vh;
 }
