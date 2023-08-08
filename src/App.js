@@ -24,7 +24,7 @@ function App() {
             <span id="editor-previewer">Editor</span>
             <i onClick={() => setEditorWrap((prevEditor) => !prevEditor)} className={editorWrap ? 'fa fa-arrows-alt' : 'fa fa-compress'}></i>
           </div>
-          <textarea id="editor" value={postEditor} onChange={e => setPostEditor(e.target.value)} className={`${editorWrap ? '' : 'height'}`}></textarea>
+          <textarea id="editor" value={postEditor} onChange={e => setPostEditor(e.target.value)} className={`${editorWrap ? '' : 'height-textarea'}`}></textarea>
         </div>
         <div className={`previewWrap ${editorWrap ? '' : 'none'} ${previewWrap ? '' : 'height'}`}>
           <div className="foolbar">
